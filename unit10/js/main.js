@@ -1,6 +1,6 @@
 async function getHotelData() {
   try {
-    const response = await fetch('http://127.0.0.1:5500/unit%2010/hotel.json')
+    const response = await fetch('./hotel.json')
     return await response.json() // return JSON object
   } catch (error) {
     console.error(error)
@@ -8,52 +8,31 @@ async function getHotelData() {
 }
 
 let hotelData = {}
-// getHotelData().then(data => hotelData = data)
+getHotelData().then(data => hotelData = data) // can write like this as well
 
-getHotelData().then(function(data) {
-  hotelData = data
-  console.log(hotelData)
-})
-
-// store in a variable document.querySelectorAll('a')
-// use that var to loop over each element and addEventListener to each one
-// Use forEach loop
-let hotelList = document.querySelectorAll('a')
-
-hotelList.forEach(hotelItem => {
-  hotelItem.addEventListener('click', hotelInfo)
-  
-})
-
-// topList.forEach(menuItem => {
-//     let newListItem = document.createElement('li')
-//     let newLink = document.createElement('a')
-//     newLink.setAttribute('href', menuItem.getAttribute('href'))
-//     // 'copy' the textContent from upper menu to new menu
-//     // append children to make them appear in the DOM
-//     let copyText = document.getElementById
+// getHotelData().then(function(data) {
+//   hotelData = data
+//   console.log(hotelData)
 // })
-
-document.querySelector('#marriott').addEventListener('click', hotelInfo)
 
 function hotelInfo(event) {
   console.log(event)
   let hotelChoice = hotelData.hotels.find(hotel => {
     return event.target.id === hotel.name.toLowerCase()
   })
-
   document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`
   document.querySelector('#address').textContent = `${hotelChoice.address}`
   document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
   document.querySelector('#gym').textContent = `${hotelChoice.gym}`
   document.querySelector('#type').textContent = `${hotelChoice.roomTypes}`
-  siteImage = document.querySelector('#picture')
+  let hotelImage = document.querySelector('#picture')
+  hotelImage.src = `${hotelChoice.picture}`
+  hotelImage.setAttribute('width', '500')
+  hotelImage.setAttribute('height', '300')
 }
 
-function createImage() {
-  var image = document.createElement('IMG')
-  image.setAttribute("src", "#picture");
-  image.setAttribute("width", "304");
-  image.setAttribute("height", "228");
-  document.body.appendChild(image)
-}
+let hotelList = document.querySelectorAll('a')
+
+hotelList.forEach(hotelItem => {
+  hotelItem.addEventListener('click', hotelInfo)
+})

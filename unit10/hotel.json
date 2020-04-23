@@ -9,7 +9,7 @@
         "Double"
       ],
       "address": "258 Broad Street",
-      "picture": "room1.jpg"
+      "picture": "images/room1.jpg"
     },
     {
       "name": "Sheraton",
@@ -20,7 +20,7 @@
         "Queen"
       ],
       "address": "15 East Main Street",
-      "picture": "room2.jpg"
+      "picture": "images/room2.jpg"
     },
     {
       "name": "Hilton",
@@ -32,7 +32,7 @@
         "Accessible"
       ],
       "address": "5690 Long Boulevard",
-      "picture": "room3.jpg"
+      "picture": "images/room3.jpg"
     }
   ]
 }
