@@ -1,0 +1,44 @@
+header {
+  background-image: url("../images/nyc.jpg");
+  background-size: 50rem;
+  background-position: 0%;
+}
+
+article {
+  float: right;
+}
+
+main button {
+  display: block;
+  background-color: #ededed;
+  border-radius: 15px;
+  padding: .5em;
+  margin: .5em 0;
+  width: 50%;
+}
+
+header {
+  max-width: 790px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #9400D3;
+  text-align: center;
+  color: white;
+}
+
+main, footer {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #008000;
+}
+
+h2 {
+  margin-left: 20px;
+  color: #008000;
+}

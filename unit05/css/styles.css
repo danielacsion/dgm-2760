@@ -1,0 +1,79 @@
+/* body,h1,h2,h3,h4,h5,h6,ul,li {
+    margin: 0;
+} */
+aside div {
+  background-color: #ededed;
+}
+
+aside {
+  float: right;
+}
+
+main button {
+  display: block;
+  background-color: #ededed;
+  border-radius: 15px;
+  padding: .5em;
+  margin: .5em 0;
+  width: 50%;
+}
+
+main div#displayResults {
+  background-color: #ededed;
+  margin-left: 2%;
+  padding: .2rem 4%;
+}
+
+main div#displayResults span {
+  color: red;
+}
+
+main div#error {
+  color: white;
+  margin-left: 2%;
+  background-color: red;
+}
+
+header {
+  max-width: 790px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("../images/trees.jpg");
+}
+
+footer {
+  background-color: #9400D3;
+  text-align: center;
+  color: white;
+}
+
+main, footer {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #008000;
+}
+
+h2 {
+  margin-left: 20px;
+  color: #008000;
+}
+
+#pageName {
+  color: #9400D3;
+}
+
+.learned, li {
+  color: #4d4d4d;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#greeting {
+  color: #4d4d4d;
+  margin-left: 20px;
+}

@@ -1,0 +1,38 @@
+{
+  "hotels": [{
+      "name": "Marriott",
+      "rooms": "50",
+      "gym": "Yes",
+      "roomTypes": [
+        "King",
+        "Queen",
+        "Double"
+      ],
+      "address": "258 Broad Street",
+      "picture": "room1.jpg"
+    },
+    {
+      "name": "Sheraton",
+      "rooms": "35",
+      "gym": "No",
+      "roomTypes": [
+        "King",
+        "Queen"
+      ],
+      "address": "15 East Main Street",
+      "picture": "room2.jpg"
+    },
+    {
+      "name": "Hilton",
+      "rooms": "68",
+      "gym": "Yes",
+      "roomTypes": [
+        "King",
+        "Queen",
+        "Accessible"
+      ],
+      "address": "5690 Long Boulevard",
+      "picture": "room3.jpg"
+    }
+  ]
+}

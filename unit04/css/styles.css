@@ -1,0 +1,46 @@
+/* body,h1,h2,h3,h4,h5,h6,ul,li {
+    margin: 0;
+} */
+header {
+  max-width: 790px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("../images/Fortune.jpg");
+}
+
+footer {
+  background-color: #9400D3;
+  text-align: center;
+  color: white;
+}
+
+main, footer {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #9400D3;
+}
+
+h2 {
+  margin-left: 20px;
+  color: #4d4d4d;
+}
+
+#pageName {
+  color: #9400D3;
+}
+
+.learned, li {
+  color: #4d4d4d;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#greeting {
+  color: #4d4d4d;
+  margin-left: 20px;
+}
